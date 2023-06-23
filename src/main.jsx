@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {
         path:'/updateUser/:id',
         element:<UpdateUser></UpdateUser>,
-        loader:({params})=>fetch(`http://localhost:5000/update/${params.id}`)
+        loader:({params})=>fetch(`https://assignmnet-skdh.vercel.app/update/${params.id}`)
       }
     ],    
   },

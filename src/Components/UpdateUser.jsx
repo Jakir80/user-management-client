@@ -15,7 +15,7 @@ const UpdateUser = () => {
         event.preventDefault();
 
         if (_id) {
-            fetch(`http://localhost:5000/updateUser/${_id}`, {
+            fetch(`https://assignmnet-skdh.vercel.app/updateUser/${_id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json',

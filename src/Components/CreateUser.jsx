@@ -8,7 +8,7 @@ const CreateUser = () => {
 
     const onSubmit = (data) => {
 
-        fetch('http://localhost:5000/adduser', {
+        fetch('https://assignmnet-skdh.vercel.app/adduser', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

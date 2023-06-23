@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 const AllUser = () => {
     const [usres, SetUser] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/alluser')
+        fetch('https://assignmnet-skdh.vercel.app/alluser')
             .then(res => res.json())
             .then(data => SetUser(data))
     }, [])
@@ -21,7 +21,7 @@ const AllUser = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/delete/${id}`, {
+                fetch(`https://assignmnet-skdh.vercel.app/delete/${id}`, {
                     method: "DELETE",
                     headers: {
                         "content-type": "application/json"
