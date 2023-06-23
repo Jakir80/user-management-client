@@ -63,7 +63,7 @@ const AllUser = () => {
                                     <td>{user.email}</td>
                                     <td>{user.phone}</td>
                                     <td>   <button className=' p-2 text-3xl font-semibold bg-gradient-to-r from-red-500 to-yellow-500 text-white py-2 px-4 rounded-md mx-auto'>
-                                        <Link to={`/updateUser/${user._id}`}>Update</Link>
+                                        <Link to={`/updateUser/${user._id}`}>Edit</Link>
                                     </button></td>
                                     <td> <button onClick={() => handledelete(user._id)} className='p-2 text-3xl font-semibold bg-gradient-to-r from-red-500 to-yellow-500 text-white py-2 px-4 rounded-md mx-auto'>
                                         Delete
